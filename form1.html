@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Form page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .center{
+              margin: auto;
+                 width: 34%;
+                 border: 2px solid #dddddd;
+                
+             }
+        .table {
+     border-collapse: collapse;
+     width: 650px;
+         font-size: 14px;
+         }
+         .table1 {
+             border-collapse: collapse;
+              width: 650px;
+             font-size: 14px;
+     }
+         
+    th, td {
+        text-align:center;
+        padding: 5px;
+     }
+      .a{
+       text-align: left;
+       padding: 10px;
+    }
+  tr:nth-child(even) {
+          background-color: #dddddd;
+            text-align: center;
+             }
+             .checked{
+                color:orange;
+             }
+             .wrapper{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap:5px;
+                grid-auto-rows: minmax(auto,auto);
+            }
+.One{
+grid-column: 1;
+    grid-row: 1;
+
+}
+.two{
+grid-column: 2;
+    grid-row: 1;
+}
+.three{
+ grid-column:1;
+    grid-row:2;
+}
+
+            
+            
+ </style>
+     </head>
+    <body>
+        <form class="center">
+        <div class="wrapper">
+            <div class="one">
+         Name*<br><input type="text" name="Name"/><br>First
+        </div>
+       <div class="two">
+         Surname*<br><input type="text" name="name"/><br>last<br></div>
+       <div class="three"> Email*<br> <input type="text" name="Email"/><br>
+    </div>
+        </div>
+       <p><b>Your Exprience*</b></p><br>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <p>Over how would you rate exprience withus.</p><br>
+       <p><b>How satisfied are you with*</b></p><br>
+       <table class="table1">
+        <tr>
+            <th class="a"></th>
+            <th>Very <br>unsatisfied</th>
+            <th>Unsatisfied</th>
+            <th>Neutral</th>
+            <th>Satisfied</th>
+            <th>Very <br>satisfied</th>
+         </tr>
+         <tr>
+            <td class="a">Purchase</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+         </tr>
+         <tr>
+            <td class="a">Service</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+        </tr>
+        <tr>
+            <td  class="a">Overall</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+        </tr>
+    </table>
+    <p><b>How likely are you to*</b></p><br>
+    <table class="table">
+        <tr>
+        <th class="a"></th>
+        <th>Very<br> likely</th>
+        <th>Unlikely</th>
+        <th>Neutral</th>
+        <th>Likely</th>
+        <th>Very <br>likely</th>
+        </tr>
+        <tr>
+            <td class="a">Buy from us again</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+        </tr>
+        <tr>
+            <td class="a">Recommend our product to others</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            
+        </tr>
+        <tr>
+            <td class="a">Recommend our others</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+            <td style="font-size: 25px;">&#9675</td>
+    </tr>
+    </table>
+    <p><b>Addinal Comments or Suggestion</b></p><br>
+    <textarea rows="5" cols="80px"  name="comment"></textarea><br>
+   <p> <button type="button ">Submit</button></p>
+    </form> </body>
+</html>

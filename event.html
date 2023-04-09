@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>event</title>
+
+<!-- CSS -->
+<style>
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 30em;
+padding: 1em;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm label {
+padding: 0;
+font-weight: bold;
+text-align: right;
+display: block;
+}
+
+.myForm input,
+.myForm select,
+.myForm textarea {
+margin-left: 2em;
+float: right;
+width: 20em;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm button {
+padding: 0.50em;
+border-radius: 0.3em;
+border: 1px solid black;
+font-weight: bold;
+font-family: cursive;
+margin-left:7em;
+margin-top: 1em;}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+
+}
+
+.circle {
+        width: 110px;
+        line-height: 120px;
+        border-radius: 50%;
+        margin: 10px;
+        text-align: center;
+        font-size: 30px;
+        border: 1px solid #000;
+      }
+      .wrapper{
+                display: grid;
+                grid-template-columns: repeat(2,2fr);
+                grid-auto-rows: minmax(100px,auto);
+      }
+      table{
+        
+        width: 630px;
+        height: 145px;
+      }
+    td {
+        width: 400px;
+        height: 130px;
+    
+        
+    }
+    
+      .rect{
+        border:1px solid black;
+        margin: 25px;
+        width: 135px;
+        height: 140px;
+        text-align: center;
+        
+      }
+      .rect1{
+        border:1px solid black;
+        width:700px;
+        height: 400px;
+        margin: 150px;
+      }
+      .rect2{
+        border:1px  solid black ;
+    
+        width: 680px;
+        height:270px;
+        margin: 10px;
+    
+      }
+      .one{
+width:30px;
+        
+      }
+      .two{
+width:450px;
+
+        
+      }
+    
+     
+      
+      
+</style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="rect1">
+        <p style="text-align: center;font-family:cursive; font-size: 22px;">Event 1</p>
+        <p style="text-align: center;">Number of available seats: 23</p>
+        
+        <div class="rect2">
+
+    
+<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+<table>
+    <tr>
+        <td class="one">
+    <div class="rect">
+     <div class="circle" style="font-family:cursive;">image</div>
+</div>
+</td>
+<td class="two">
+<p>
+<label>Name 
+<input type="text" name="customer_name" required>
+</label> 
+</p>
+
+<p>
+<label>Email:
+<input type="email" name="Email">
+</label>
+</p>
+
+<p>
+ <label>Phone No:
+ <input type="Phone No" name="Phone_No">
+ </label>
+</p>
+	
+<p>
+<label>Number of seats:
+<select id="pickup_place" name="pickup_place">
+ <option value="number">1</option>
+<option value="number" selected="selected">2</option>
+<option value="number" >3</option>
+<option value="number" >4</option>
+<option value="number" >5</option>
+<option value="number" >6</option>
+<option value="number" >7</option>
+<option value="number" >8</option>
+<option value="number" >9</option>
+<option value="number" >10</option>
+<option value="number" >11</option>
+<option value="number" >12</option>
+<option value="number" >13</option>
+<option value="number" >14</option>
+<option value="number" >15</option>
+<option value="number" >16</option>
+<option value="number" >17</option>
+<option value="number" >18</option>
+<option value="number" >19</option>
+<option value="number" >20</option>
+<option value="number" >21</option>
+<option value="number" >22</option>
+<option value="number" >23</option>
+</select>
+</label> 
+</p>
+
+<p>
+    <label>Number of Attendee:
+    <input type="Phone No" name="Phone_No">
+    </label>
+   </p>
+
+<p class="button">
+<button>Submit </button><button>Cancel </button></p>
+</td>
+</tr>
+</table>
+
+</form>
+</div>
+    </div>
+    </div>
+
+</body>
+</html>
